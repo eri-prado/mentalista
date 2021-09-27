@@ -1,8 +1,8 @@
 body {
   font-family: "Roboto Mono", monospace;
+  font-size: 18px;
   min-height: 600px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png");
-  background-color: #000000;
+  background: linear-gradient(to top, #8e2de2, #4a00e0); 
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -42,16 +42,49 @@ body {
 }
 
 input {
-  margin: 4px;
+  margin: 20px 0;
   padding: 6px;
   border-radius: 5px;
+  font-size: 18px;
+  color: #3f3f3f;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  outline: none;
+  transition: 0.3s;
 }
 
-button {
-  margin-top: 12px;
-  padding: 4px 8px;
-  border-radius: 10px;
-  background: #ffffff;
+input:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+button.btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 12px 0;
+  width: 155px;
+  height: 45px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border: 3px #ffffff solid;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #4a00e0;
+  border: none;
+  box-shadow: 0 0 8px 0 dodgerblue;
 }
 
 .resultado {
